@@ -23,4 +23,5 @@ module.exports = (app) => {
     // res.send(req.session);  --view cookie (session)
     res.send(req.user);
   });
+
 };
