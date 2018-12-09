@@ -10,35 +10,39 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return (
+        return [
           <li>
-            <a href="/auth/google">Login with Google</a>
+            <a style={{height:'53px', fontWeight: '200'}} href="/auth/google">About</a>
+          </li>, 
+          <li>
+            <a style={{height:'53px', fontWeight: '200'}} href="/auth/google">Login</a>
           </li>
-        );
+        ];
       default:
         return [
-          <li key="1">
-            <Payments/>
+          <li key="1" style={{height:'53px'}}>
+            <Payments />
           </li>,
-          <li key="3" style={{ margin: '0 10px'}}>
-            Credits: {this.props.auth.credits}
+          <li key="3" style={{ margin: '-1px 10px 0 10px', fontWeight:'200'}}>
+            Your Credits: {this.props.auth.credits}
           </li>,
-          <li key="2">
-            <a href="/api/logout">Logout</a>
+          <li key="2" style={{ margin: '-1px 10px 0 10px', fontWeight:'200'}} >
+            <a style={{height:'53px'}} href="/api/logout">Logout</a>
           </li>
         ];
     }
   }
 
   render(){
+    console.log(this.props.auth);
     return (
-      <nav>
+      <nav style={{height:'40px', backgroundColor:'#263238'}}>
         <div className="nav-wrapper">
-          <Link 
+          <Link style={{fontSize: '21px', marginLeft:'15px', height:'50px', marginTop: '-14px', fontWeight:'300'}}
             to={this.props.auth ? '/surveys' : '/'} 
             className="brand-logo"
           >Emaily</Link>
-          <ul className="right">
+          <ul className="right" style={{marginTop: '-12px', marginRight: '20px'}}>
             {this.renderContent()}
           </ul>
         </div>
