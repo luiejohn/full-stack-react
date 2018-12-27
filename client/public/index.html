@@ -7,8 +7,10 @@
     <meta name="theme-color" content="#000000">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
+    <!-- materializecss cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link href="index.css" rel="stylesheet">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -41,7 +43,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
   <script>
       document.addEventListener('DOMContentLoaded', function() {
       var slider = document.querySelectorAll('.slider');
@@ -53,7 +55,12 @@
         });
 
       var modal = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(modal);
+      var instances = M.Modal.init(modal, {
+          endingTop: '18%'
+      });
+
+      var sideNav = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(sideNav);
 
       });
   </script>

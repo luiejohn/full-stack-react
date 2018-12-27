@@ -5,10 +5,18 @@ import SurveryList from './surveys/SurveyList';
 import UserInfo from './UserInfo';
 import Sideboard from './Sideboard';
 
+// import Spinner from './Spinner/spinner';
+
 class Dashboard extends Component {
 
+    // state = {
+    //     loading: true
+    // }
+
     render(){
-        var name = this.props.auth ? this.props.auth.firstName : " ";
+        let name = this.props.auth ? this.props.auth.firstName : " ";
+
+
         return (
             <div className="row">
                 <div className="col s2" style={{minHeight:'740px', backgroundColor:'#004d40', color: 'white'}}>
@@ -18,7 +26,7 @@ class Dashboard extends Component {
                     <UserInfo user={name}/>
                     <hr />
                     <div style={{padding:'0 15px'}}>
-                        <SurveryList/>
+                        <SurveryList/>  
                     </div>
                     <div className="fixed-action-btn">
                         <Link to="/surveys/new" className="btn-floating btn-large red">
