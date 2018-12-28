@@ -38,7 +38,7 @@ class Header extends Component {
     console.log(this.props.auth);
     return [
       <div key="asd">
-        <nav style={{height:'40px', backgroundColor:'#37474f', color:'#eeeeee'}}>
+        <nav style={{height:'40px', backgroundColor:'#263238', color:'#eeeeee'}}>
           <div className="nav-wrapper">
             <Link style={{fontSize: '21px', marginLeft:'15px', height:'50px', marginTop: '-14px', fontWeight:'300'}}
               to={this.props.auth ? '/surveys' : '/'} 
@@ -65,7 +65,7 @@ class Header extends Component {
         <div key="axd" id="modal1" style={{border:'0'}} className="modal col s12 m8 offset-m2  l4 offset-l4">
           <div style={{paddingTop:'0'}} className="modal-content center-align col s12 m12 l12">
             <div className="right-align">
-              <a href="#!" style={{marginRight:'-20px', padding:'0'}} className="modal-close waves-effect waves-green btn-flat">
+              <a href="#!" style={{marginRight:'-33px', padding:'0'}} className="modal-close waves-effect waves-green btn-flat">
                 <i style={{fontSize:'30px'}} className="material-icons">highlight_off</i>
               </a>
             </div>
@@ -73,11 +73,11 @@ class Header extends Component {
             <h5 style={{marginBottom: '20px', marginTop:'10px'}}>Login Using</h5>
               <div className="row">
                   <div className="col s12 m12 l12" style={{padding:'15px 30px' }}>
-                    <a href="/auth/google" style={{width:'100%'}} className="waves-effect waves-light btn deep-orange lighten-1">Google</a>
+                    <a href="/auth/google" style={{width:'100%'}} className="waves-effect waves-light btn red lighten-1">Google</a>
                   </div>
 
                   <div className="col s12 m12 l12" style={{padding:'15px 30px'}} >
-                    <a style={{width:'100%'}} className="waves-effect waves-light btn blue">Facebook</a>
+                    <a style={{width:'100%'}} className="waves-effect waves-light btn blue darken-3">Facebook</a>
                   </div>
               </div>
               <hr style={{border:'1px solid #bdbdbd'}}/>
