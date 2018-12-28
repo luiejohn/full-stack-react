@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
+import mylogo from '../images/mylogo.png';
 
 class Header extends Component {
 
@@ -40,10 +41,10 @@ class Header extends Component {
       <div key="asd">
         <nav style={{height:'40px', backgroundColor:'#263238', color:'#eeeeee'}}>
           <div className="nav-wrapper">
-            <Link style={{fontSize: '21px', marginLeft:'15px', height:'50px', marginTop: '-14px', fontWeight:'300'}}
+            <Link style={{fontSize: '21px', marginLeft:'15px', height:'50px', marginTop: '5px', fontWeight:'300', lineHeight:'100%'}}
               to={this.props.auth ? '/surveys' : '/'} 
               className="brand-logo"
-            >Emaily</Link>
+            >Emailer<img style={{width:'22px', height:'22px'}} src={mylogo} /></Link>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger" style={{height:'50px',marginTop: '-9px'}}><i  style={{height:'50px'}} className="material-icons">menu</i></a>
             <ul className="right hide-on-med-and-down" style={{marginTop: '-12px', marginRight: '20px'}}>
               {this.renderContent()}

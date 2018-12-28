@@ -7,3 +7,9 @@ body {
 #root  {
     flex: 1 0 auto;
   }
+/* 
+@media (min-width: 500px){
+  .adjust{
+    margin-top: -9px !important;
+  }
+} */
