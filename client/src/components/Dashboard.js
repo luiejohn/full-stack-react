@@ -18,14 +18,13 @@ class Dashboard extends Component {
 
 
         return (
-            <div className="row">
-                <div className="col s2" style={{minHeight:'740px', backgroundColor:'#004d40', color: 'white'}}>
-                    <Sideboard/>
+            <div className="row" style={{margin:'0'}}>
+                <div className="col s12 m3 l2" style={{minHeight:'740px'}}>
+                    <Sideboard user={name}/>
                 </div>
-                <div className="col s10" style={{padding:'0'}}>
-                    <UserInfo user={name}/>
+                <div className="col s12 m9 l10" style={{padding:'0', margin:'0', borderLeft:'1px solid #ccc', backgroundColor:'#c1c1c1'}}>
                     <hr />
-                    <div style={{padding:'0 15px'}}>
+                    <div style={{padding:'0 15px',}}>
                         <SurveryList/>  
                     </div>
                     <div className="fixed-action-btn">

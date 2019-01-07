@@ -9,9 +9,10 @@ import mylogo from '../images/mylogo.png';
 const Landing = () =>{
     return (
         <div>
+            
             <h1 className="center-align" style={{position:'absolute',left: '0', right:'0',margin:'auto', zIndex:'50', color:'white', marginTop: '150px'}}>
                 Emailer
-                <img style={{width:'60px', height:'60px'}} src={mylogo} />
+                <img style={{position:'absolute',zIndex:'50', width:'60px', height:'60px'}} src={mylogo} />
             </h1>
             <a href="#modal1" className="waves-effect waves-light btn red lighten-1 modal-trigger" style={{position:'absolute',left: '0', right:'0',margin:'auto', zIndex:'50', color:'white', marginTop: '340px', width:'150px'}}>Get Started</a>
             <div className="slider green accent-3">

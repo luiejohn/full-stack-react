@@ -22,14 +22,14 @@ class Header extends Component {
         ];
       default:
         return [
-          <li key="1" style={{height:'53px'}}>
+          <li key="1" style={{height:'100%'}}>
             <Payments />
           </li>,
           <li key="3" style={{ margin: '-1px 10px 0 10px', fontWeight:'200', color:'#eeeeee'}}>
             Your Credits: {this.props.auth.credits}
           </li>,
           <li key="2" style={{ margin: '-1px 10px 0 10px', fontWeight:'200'}} >
-            <a style={{height:'53px', color:'#eeeeee'}} href="/api/logout">Logout</a>
+            <a style={{height:'54px', color:'#eeeeee'}} href="/api/logout">Logout</a>
           </li>
         ];
     }
@@ -46,7 +46,7 @@ class Header extends Component {
               className="brand-logo"
             >Emailer<img style={{width:'22px', height:'22px'}} src={mylogo} /></Link>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger" style={{height:'50px',marginTop: '-9px'}}><i  style={{height:'50px'}} className="material-icons">menu</i></a>
-            <ul className="right hide-on-med-and-down" style={{marginTop: '-12px', marginRight: '20px'}}>
+            <ul className="right hide-on-med-and-down" style={{marginTop: '-12px', marginRight: '20px', height:'100%'}}>
               {this.renderContent()}
             </ul>
           </div>
